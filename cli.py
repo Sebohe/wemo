@@ -5,11 +5,8 @@ import sys
 
 if __name__ == "__main__":
     
-    print (sys.argv)
     assert(len(sys.argv) <= 3)
-
     myWemo = WemoDevice(sys.argv[1])
-
     if sys.argv[-1] == "on":
         myWemo.on()
         exit()
